@@ -1,6 +1,6 @@
 from src.data_collection import WebScraper
 from src.data_preprocessor import DataPreprocessor
-#from src.price_analyzer import PriceAnalyzer
+from src.price_analyzer import PriceAnalyzer
 import pandas as pd
 import time
 from config import CONFIG
@@ -9,7 +9,7 @@ def main():
     # Initialize components
     scraper = WebScraper(CONFIG)
     preprocessor = DataPreprocessor(CONFIG)
-    #analyzer = PriceAnalyzer(CONFIG)
+    analyzer = PriceAnalyzer(CONFIG)
     
     def job():
         try:
